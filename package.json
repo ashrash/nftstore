@@ -1,0 +1,23 @@
+{
+  "name": "nftstore",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mint": "npx hardhat run scripts/mint-nft.mjs \\--network PolygonMumbai",
+    "deploy": "npx hardhat run scripts/deploy-contract.mjs --network PolygonMumbai",
+    "store": "node scripts/store-asset.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.9.1",
+    "nft.storage": "^6.0.2"
+  }
+}
