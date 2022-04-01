@@ -1,5 +1,7 @@
-const CONTRACT_ADDRESS = "0x2Ae9eBfC5931cF1639a9EB199B75D3D6d2d4727a"
-const META_DATA_URL = "ipfs://bafyreicpehtksjcl2zbnzg6wqbpboxtiddgbbeo6t7s3dj2emlg6mh5omm/metadata.json"
+
+const CONTRACT_ADDRESS = "0xCaFf9c374411baE0BD28a56d3a5522ED04FBd188"
+const META_DATA_URL = "ipfs:/bafyreibucihlkyeqa2eo32waac3nc3r4czgu7ryjrle36y5i3fbkpozsdi/metadata.json"
+
 
 async function mintNFT(contractAddress, metaDataURL) {
    const ExampleNFT = await ethers.getContractFactory("ExampleNFT")
